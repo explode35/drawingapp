@@ -518,7 +518,7 @@
                 ctx.lineTo(action.endX, action.endY);
                 ctx.stroke();
             } else if (action.type === 'rectangle') {
-                ctx.strokeRect(action.x, action.y, action.width, image.height);
+                ctx.strokeRect(action.x, action.y, action.width, action.height);
             } else if (action.type === 'circle') {
                 ctx.beginPath();
                 ctx.arc(action.x, action.y, action.radius, 0, Math.PI * 2);
